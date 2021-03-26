@@ -1,0 +1,40 @@
+@api = http://localhost:8000
+GET {{api}}/videos
+### 
+GET {{api}}/videos/605d211e6f23ea02d961f4ec
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=ur6I5m2nTvk&list=PL4cUxeGkcC9ixPU-QkScoRBVxtPPzVjrQ",
+    "title": "react video",
+    "description": "by net ninja"
+}
+### 
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=esX7SFtEjHg",
+    "title": "fazt video",
+    "description": "this is a lofi video"
+}
+### 
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=ur6I5m2nTvk&list=PL4cUxeGkcC9ixPU-QkScoRBVxtPPzVjrQ",
+    "title": "react video",
+    "description": "by net ninja"
+}
+### 
+PUT  {{api}}/videos/605d1cbfb1d2b9028583f55a
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=ur6I5m2nTvk&list=PL4cUxeGkcC9ixPU-QkScoRBVxtPPzVjrQ",
+    "title": "fazt video of Mern stacken"
+}
+
+###
+DELETE {{api}}/videos/605d1cbfb1d2b9028583f55a
